@@ -1,0 +1,27 @@
+---
+config:
+  #Folder to store videos
+  #don't have to change it if using docker
+  folder: /media
+  #Interval between channels (in second)
+  interval: 10
+
+#list of channels
+#name: write the name of the folder to be stored per channel. There should be no "/\:*?"<>|" in the name.
+#id: write the id of the channel you wanna monitor (it's not a handle!!)
+#mod: if you just want to store live chats only, type comment, while if you want to store all the videos and metadata, type total
+#discord: write the discord webhook address
+#description: annotations. feel free to write down anything you want.
+map:
+  - name: ABCD1
+    id: UCXXXXX
+    mod: comment
+    discord: https://discord.com/api/webhooks/..
+    description: ABCDEFG$#!$#@!$
+
+  - name: ABCD2
+    id: UCXXXXX
+    mod: total
+    discord: https://discord.com/api/webhooks/..
+    description: ABCDEFG
+...
