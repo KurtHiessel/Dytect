@@ -53,7 +53,7 @@ if [ ! -z "$METADATA_RAW" ]; then
 
         #convert files after the record
         #webp to png
-        echo "${NAME}의 라이브 스트리밍 녹화가 성공적으로 완료되었습니다. 각종 파일 변환을 변환합니다."
+        echo "${NAME}'s live stream is offline. Trying to convert some files.."
         for inputwebp in "$FOLDER"/*.webp; do
             inputwebpfolder="$( dirname "$inputwebp" )"
             ffmpeg -y -i "$inputwebp" "${inputwebpfolder}/cover.png"
@@ -70,7 +70,7 @@ if [ ! -z "$METADATA_RAW" ]; then
             mv "$inputtext" "${inputtextfolder}/설명.txt"
         done
         #
-        echo "${NAME}의 라이브 스트리밍 백업 작업이 완전히 종료되었습니다. 감사합니다."
+        echo "Archiving ${NAME}'s live stream is now completed."
 
     #mod: comment
     elif [ "$MOD" == "comment" ]; then
