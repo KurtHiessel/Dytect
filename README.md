@@ -55,4 +55,4 @@ PROFIT!!
 ***
 Code inspired by sparanoid(https://github.com/sparanoid/live-dl)
 
-For I'm just an amateur, if you can make a better code, please fix it and let me know; for I would like to use yours XD
+For I'm just an amateur, if you can make it better please feel free to modify it and let me know; for I would like to use yours XD
